@@ -1,4 +1,7 @@
-#funcao para verificar se eh primo ou nao
+#
+#   LAB 141
+#
+#Funcao para verificar se eh primo ou nao
 def verif_primo(num):
     
     if num <= 1: #num menores que 2 nao sao primos
@@ -34,6 +37,7 @@ while num <= 250:
 with open('results.txt', 'w') as file:
     for p in primos:
         file.write(str(p) + '\n')
+file.close()
 
 # Exibir
 print("Os numeros primos entre 1 e 250 sao: ",primos)
